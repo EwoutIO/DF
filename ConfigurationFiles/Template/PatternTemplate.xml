@@ -1,0 +1,148 @@
+<!-- A design pattern consists of the following elements. The values for several enumerators are defined 
+at the end of this file. If a defined property in the model is plural, this means multiple subcomponents 
+can be defined, as seen in the example files. If a field is not required, it can be left out and will not
+be used in the matching of the symbols to the component/member. -->
+<DesignPattern>
+    <!-- REQUIRED: The pattern name -->
+    <Name>Pattern Name</Name>
+    <!-- The components that belong to the design pattern. At least one component is required. -->
+    <Components />
+</DesignPattern>
+
+<!-- One of the components of the pattern -->
+<Component>
+    <!-- REQUIRED: The component name, this is how the other components refer to this component, 
+    as well as the name in the results -->
+    <Name>Component Name</Name>
+
+    <!-- REQUIRED: The type of the component, defined in the ComponentTypes enumerator -->
+    <ComponentType>ComponentTypes</ComponentType>
+
+    <!-- The access modifier of the component, defined in the AccessModifier enumerator -->
+    <AccessModifier>AccessModifiers</AccessModifier>
+
+    <!-- The modifier of the component, defined in the Modifiers enumerator -->
+    <Modifier>Modifiers</Modifier>
+
+    <!-- The inheritances of the component. These can be system types/interfaces (IDisposable, for 
+    example), and other custom components -->
+    <Inheritances />
+
+    <!-- The members of the component, methods, fields, constructors, etc. -->
+    <Members />
+
+    <!-- REQUIRED: How many times the component can occur, and whether it's mandatory -->
+    <Occurrence />
+</Component>
+
+<!-- a class or interface that is inherited by the component -->
+<Inheritance>
+    <!-- REQUIRED: The type of the inherited symbol, defined in the ComponentTypes enumerator -->
+    <ComponentType>ComponentTypes</ComponentType>
+
+    <!-- REQUIRED: Whether the value is of a custom type, if so, define it as component 
+    in the file. [true] or [false] (lower case) -->
+    <Custom>true/false</Custom>
+    <Name></Name>
+</Inheritance>
+
+<!-- a member of a component. -->
+<Member>
+    <!-- REQUIRED: The type of the member, as defined in the enumerator MemberTypes -->
+     <MemberType>MemberTypes</MemberType>
+
+    <!-- The access modifier of the member, as defined in the enumerator AccessModifiers -->
+     <AccessModifier>AccessModifiers</AccessModifier>
+
+    <!-- the modifier of the member, as defined in the enumerator Modifiers -->
+    <Modifier>Modifiers</Modifier>
+
+    <!-- REQUIRED: The datatype of the member -->
+    <DataType />
+
+    <!-- The parameters of the member -->
+    <Parameters />
+
+    <!-- REQUIRED: How many times the component can occur, and whether it's mandatory -->
+    <Occurrence />
+</Member>
+
+
+<!-- A parameter for a call to a function/method/constructor/etc -->
+<Parameter>
+    <!-- REQUIRED: The datatype of the parameter -->
+    <DataType />
+
+    <!-- REQUIRED: How many times the parameter can occur, and whether it's mandatory -->
+    <Occurrence />
+</Parameter>
+
+
+<!-- The datatype is either the type of a member, or the returntype of that member. -->
+<DataType>
+    <!-- Whether the value is a collection, [true] or [false] (lower case) -->
+    <Collection>true/false</Collection>
+    <!-- REQUIRED: Whether the value is of a custom type, if so, define it as component 
+    in the file. [true] or [false] (lower case) -->
+    <Custom>true/false</Custom>
+    <!-- REQUIRED: The name of the type, either a componentname or a system type 
+    (int/string/DateTime etc.) -->
+    <TypeName>Type</TypeName>
+</DataType>
+
+<!-- The minimum and maximum occurrence -->
+<Occurrence>
+    <!-- REQUIRED: Allowed values are defined in the OccurrenceValues enumerator -->
+    <MinimumOccurrence>OccurrenceValues</MinimumOccurrence>
+
+    <!-- REQUIRED: Allowed values are defined in the OccurrenceValues enumerator -->
+    <MaximumOccurrence>OccurrenceValues</MaximumOccurrence>
+</Occurrence>
+
+<!-- Enumerators -->
+<AccessModifiers>
+    <Value>Public</Value>
+    <Value>Protected</Value>
+    <Value>Internal</Value>
+    <Value>ProtectedInternal</Value>
+    <Value>Private</Value>
+    <Value>PrivateProtected</Value>
+</AccessModifiers>
+
+<ComponentTypes>
+    <Value>Class</Value>
+    <Value>Interface</Value>
+    <Value>Struct</Value>
+</ComponentTypes>
+
+<MemberTypes>
+    <Value>Constructor</Value>
+    <Value>Constant</Value>
+    <Value>Field</Value>
+    <Value>Finalizer</Value>
+    <Value>Method</Value>
+    <Value>Property</Value>
+    <Value>Indexer</Value>
+    <Value>Operator</Value>
+    <Value>Event</Value>
+    <Value>Delegate</Value>
+    <Value>Class</Value>
+    <Value>Interface</Value>
+    <Value>Struct</Value>
+    <Value>Enum</Value>
+</MemberTypes>
+
+<Modifiers>
+    <Value>Abstract</Value>
+    <Value>Sealed</Value>
+    <Value>Virtual</Value>
+    <Value>Static</Value>
+    <Value>Override</Value>
+</Modifiers>
+
+<OccurrenceValues>
+    <Value>0</Value>
+    <Value>1</Value>
+    <Value>N</Value>
+</OccurrenceValues>
+

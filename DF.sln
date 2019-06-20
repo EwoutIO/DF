@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DF.Core", "DF.Core\DF.Core.csproj", "{42F3D673-E324-4B11-B61C-C6850D98A0A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DF.Models", "DF.Models\DF.Models.csproj", "{C4973554-DDA8-4E0D-9FBF-79DB29434265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DF.Finder", "DF.Finder\DF.Finder.csproj", "{5B8C3CAE-70E4-4144-A6BE-1515CF468E96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DF.Tests", "DF.Tests\DF.Tests.csproj", "{CC21A3B4-A462-4BAA-A09B-565691929B0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConfigurationFiles", "ConfigurationFiles", "{9578DCDC-C479-4ABB-82D1-625E1D3E9EC5}"
+	ProjectSection(SolutionItems) = preProject
+		ConfigurationFiles\AbstractFactory.xml = ConfigurationFiles\AbstractFactory.xml
+		ConfigurationFiles\Composite.xml = ConfigurationFiles\Composite.xml
+		ConfigurationFiles\Singleton.xml = ConfigurationFiles\Singleton.xml
+		ConfigurationFiles\State.xml = ConfigurationFiles\State.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DF.CLI", "DF.CLI\DF.CLI.csproj", "{5F1522EA-64B8-48B4-B855-0D9A3DC18545}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42F3D673-E324-4B11-B61C-C6850D98A0A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F3D673-E324-4B11-B61C-C6850D98A0A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F3D673-E324-4B11-B61C-C6850D98A0A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F3D673-E324-4B11-B61C-C6850D98A0A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4973554-DDA8-4E0D-9FBF-79DB29434265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4973554-DDA8-4E0D-9FBF-79DB29434265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4973554-DDA8-4E0D-9FBF-79DB29434265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4973554-DDA8-4E0D-9FBF-79DB29434265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8C3CAE-70E4-4144-A6BE-1515CF468E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8C3CAE-70E4-4144-A6BE-1515CF468E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8C3CAE-70E4-4144-A6BE-1515CF468E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8C3CAE-70E4-4144-A6BE-1515CF468E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC21A3B4-A462-4BAA-A09B-565691929B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC21A3B4-A462-4BAA-A09B-565691929B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC21A3B4-A462-4BAA-A09B-565691929B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC21A3B4-A462-4BAA-A09B-565691929B0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1522EA-64B8-48B4-B855-0D9A3DC18545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1522EA-64B8-48B4-B855-0D9A3DC18545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1522EA-64B8-48B4-B855-0D9A3DC18545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1522EA-64B8-48B4-B855-0D9A3DC18545}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88409E11-54B6-4A9E-8D9A-B96596307125}
+	EndGlobalSection
+EndGlobal
